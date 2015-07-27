@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentSplitViewGeometry</key>
+	<dict>
+		<key>ContentSplitViewConfig</key>
+		<integer>8</integer>
+		<key>SplitViewConfig</key>
+		<integer>3</integer>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {759, 402}}</string>
+			<string>{{0, 412}, {759, 206}}</string>
+		</array>
+	</dict>
+	<key>ContentViewType</key>
+	<integer>3</integer>
+	<key>DeploymentOptions</key>
+	<dict>
+		<key>CompressJavaScript</key>
+		<false/>
+		<key>Destination</key>
+		<string>localhost.default</string>
+		<key>EmailToNotifyAddress</key>
+		<string>some_user@example.com</string>
+		<key>SavePath</key>
+		<string>/Users/some_user/Documents</string>
+		<key>WidgetDeployName</key>
+		<string>TextBelter</string>
+		<key>enableSimulation</key>
+		<true/>
+		<key>simulatedHost</key>
+		<string>some_host.local</string>
+	</dict>
+	<key>MainSplitViewGeometry</key>
+	<dict>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {244, 639}}</string>
+			<string>{{245, 0}, {760, 639}}</string>
+		</array>
+	</dict>
+	<key>MainWindowFrame</key>
+	<string>55 118 1004 660 0 0 1280 778 </string>
+	<key>NavigatorSplitViewGeometry</key>
+	<dict>
+		<key>ContentSplitViewConfig</key>
+		<integer>5</integer>
+		<key>SplitViewConfig</key>
+		<integer>3</integer>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {246, 352}}</string>
+			<string>{{0, 362}, {246, 256}}</string>
+		</array>
+	</dict>
+	<key>Widget</key>
+	<dict>
+		<key>Objects view expanded items</key>
+		<array>
+			<array>
+				<integer>0</integer>
+			</array>
+		</array>
+		<key>Objects view last selections</key>
+		<array>
+			<array>
+				<integer>3</integer>
+			</array>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Textbelt Safari Extension</title>
+<script language="javascript" src="client.js"></script>
+<!--// See client.js for code comments and references //-->
+<style>        
+	td
+	{
+	    font-size: 12px;
+	}
+	.header
+	{
+		font-weight: bold;
+	}
+	.error
+	{
+		color: red;
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<span class="header">TextBelter:</span> Select locale:&nbsp;
+<SELECT NAME="Destination" id="Destination">
+<OPTION VALUE="USA">USA</OPTION>
+<OPTION VALUE="Canada">Canada</OPTION>
+<OPTION VALUE="International">International</OPTION>
+</SELECT>
+</td>
+<td>
+Number:&nbsp;<INPUT TYPE="Text" NAME="Number" id="Number" SIZE="16" MAXLENGTH="16">
+</td>
+<td>
+Message:&nbsp;<INPUT TYPE="Text" NAME="Message" id="Message" SIZE="30" MAXLENGTH="120">
+</td>
+<td>
+<INPUT TYPE="Button" VALUE="Send" NAME="Send" ID="Send">
+</td>
+<td>
+<span class="header">Status: </span>
+<marquee>
+<div id="status_message"></div>
+</marquee>
+</td>
+</tr>
+</table>
+</body>
+</html>

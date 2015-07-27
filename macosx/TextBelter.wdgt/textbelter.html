@@ -1,0 +1,68 @@
+
+<html>
+<head>
+    <title>Textbelter</title>
+    <script language="javascript" src="client.js"></script>
+    <!--// See client.js for code comments and references //-->
+    <style>        
+	td
+	{
+	    font-size: 12px;
+	}
+	.header
+	{
+		font-weight: bold;
+	}
+	.error
+	{
+		color: red;
+		font-weight: bold;
+	}
+</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div style="border: 1px solid #D5DBDB; padding: 0px; width:600px; margin:0 auto; background-color: #D5DBDB;">
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td align="center" class="header">
+                        Recipient locale:
+                    </td>
+                    <td align="center" class="header">
+                        Number:
+                    </td>
+                    <td align="center" class="header">
+                        Message:
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="Destination" id="Destination">
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="International">International</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="Text" name="Number" id="Number" size="15" maxlength="16">
+                    </td>
+                    <td>
+                        <input type="Text" name="Message" id="Message" size="30" maxlength="120">
+                    </td>
+                    <td>
+                        <input type="Button" value="Send" name="Send" id="Send">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" align="left">
+                        <span class="header">Status:</span> <div id="status_message"></div>
+                        <!--//<INPUT TYPE="Text" DISABLED="disabled" ID="status_message" SIZE="90"></INPUT>//-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

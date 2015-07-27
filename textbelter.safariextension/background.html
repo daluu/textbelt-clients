@@ -1,0 +1,24 @@
+// welcome page for Safari
+(function () {
+  var storage = {
+    read: function (id) {
+      return localStorage[id] || null;
+    },
+     write: function (id, data) {
+      localStorage[id] = data + '';
+    }
+  };
+  function version () {
+    return safari.extension.displayVersion;
+  }
+  function open (url) {
+    safari.application.activeBrowserWindow.openTab('foreground').url = url;
+  }
+
+  if (version() !== storage.read('version')) {
+    window.setTimeout(function () {
+      open('http://add0n.com/textbelter.html?v=' + version() + (storage.read('version') ? '&p=' + storage.read('version') + '&type=upgrade' : '&type=install'));
+      storage.write('version', version());
+    }, 3000);
+  }
+})();

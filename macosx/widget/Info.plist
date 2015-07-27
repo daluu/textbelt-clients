@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowFileAccessOutsideOfWidget</key>
+	<true/>
+	<key>AllowNetworkAccess</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>TextBelter</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cuuldesigns.widget.textbelter</string>
+	<key>CFBundleName</key>
+	<string>TextBelter</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CloseBoxInsetX</key>
+	<integer>16</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>14</integer>
+	<key>Height</key>
+	<string>200</string>
+	<key>MainHTML</key>
+	<string>textbelter.html</string>
+	<key>Width</key>
+	<string>800</string>
+</dict>
+</plist>
