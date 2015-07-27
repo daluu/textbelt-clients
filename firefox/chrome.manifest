@@ -1,0 +1,6 @@
+content textbelter chrome/content/
+overlay chrome://browser/content/browser.xul chrome://textbelter/content/textbelter.xul
+
+locale textbelter en-US chrome/content/
+
+skin textbelter classic/1.0 chrome/skin/

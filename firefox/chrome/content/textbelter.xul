@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<overlay id="TextBelter-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://textbelter/content/client.js"/>
+		
+<toolbox id="navigator-toolbox">
+
+	<toolbar id="TextBelter-Toolbar" accesskey="S" class="chromeclass-toolbar"
+	context="toolbar-context-menu" toolbarname="TextBelter Toolbar"
+	hidden="false" persist="hidden">
+		<toolbaritem flex="0">
+		
+			<toolbarbutton id="LocaleLabel" label="Locale:"></toolbarbutton>
+			<toolbarbutton id="TextBelter-MainMenu" label="Select Locale" persist="label tooltiptext" type="menu"
+						   tooltiptext="Select Recipient Locale/Destination" minwidth="125" maxwidth="125" crop="end">
+				<menupopup id="TextBelter-MenuPopup">
+					<menuitem id="menuItemUsa" label="USA" accesskey="U"
+							  tooltiptext="Send to a number in USA"
+							  type="radio"
+							  oncommand="TextBelter.TextBelter_SetLocale(this)"
+							  />
+					<menuitem id="menuItemCanada" label="Canada" accesskey="C"
+							  tooltiptext="Send to a number in Canada"
+							  type="radio"
+							  oncommand="TextBelter.TextBelter_SetLocale(this)"
+							  />
+					<menuitem id="menuItemIntl" label="International" accesskey="I"
+							  tooltiptext="Send to an international number (not in USA/Canada)"
+							  type="radio"
+							  oncommand="TextBelter.TextBelter_SetLocale(this)"
+							  />
+				</menupopup>
+			</toolbarbutton>
+		
+		</toolbaritem>
+		<toolbaritem id="TextBelter-Phone-Number" flex="1" align="center" persist="width">
+			<toolbarbutton id="TextBelter-PNButton" label="Tel. No.:" persist="label tooltiptext"
+						   tooltiptext="Enter Phone Number" crop="end">
+			</toolbarbutton>
+			<textbox id="TextBelter-PN" type="autocomplete" autocompletesearch="form-history" 
+						completedefaultindex="true" enablehistory="true" editable="true"
+					  autocompletesearchparam="WC_History" size="12" maxlength="16">
+			</textbox>
+			
+			
+			<toolbarbutton id="Message" label="Message" tooltiptext="Enter SMS text message"></toolbarbutton>
+			<textbox id="TextBelter-MB" editable="true" flex="1"
+					  minwidth="40" width="3" maxlength="120" persist="width">
+			</textbox>
+		</toolbaritem>
+		
+		<splitter id="TextBelter-ResizeSplitter" state="open" collapse="none"
+				  resizebefore="closest" resizeafter="farthest"
+				  tooltiptext="Resize the Message Box" />
+				  
+		<toolbaritem flex="2" align="end">
+		
+			<toolbarseparator />
+
+			<toolbarbutton id="TextBelter-Send-Button" label="Send"
+						   tooltiptext="Send your SMS text message"
+						   oncommand="TextBelter.TextBelter_SendMessage(event)">
+			</toolbarbutton>
+		
+		</toolbaritem>
+	
+	</toolbar>
+</toolbox>
+</overlay>

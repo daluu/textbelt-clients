@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+  
+  <em:creator>David Luu</em:creator>
+  <em:description>Send SMS/text messages free w/o registration</em:description>
+  <em:homepageURL>https://github.com/daluu/textbelt-clients</em:homepageURL>
+  <em:id>textbelter@example.net</em:id>
+  <em:name>TextBelter</em:name>
+  <em:version>1.0</em:version>
+  <em:type>2</em:type>
+  
+  <em:targetApplication>
+    <Description>
+      <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+      <em:minVersion>3.6</em:minVersion>
+      <em:maxVersion>13.0a1</em:maxVersion>
+    </Description>
+  </em:targetApplication>
+ 
+  </Description>
+  
+</RDF>
