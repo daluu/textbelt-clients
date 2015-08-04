@@ -1,0 +1,19 @@
+{
+  "name": "TextBelter",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Send free SMS w/o registration and CAPTCHA",
+  "icons": {
+    "16": "textbelter_icon_16.png",
+    "48": "textbelter_icon_48.png",
+    "64": "textbelter_icon_64.png"
+  },
+  "browser_action": {
+    "default_icon": "textbelter_icon_16.png",
+    "default_title": "Textbelt client",
+    "default_popup": "textbelter.html"
+  },
+  "permissions": [
+    "http://www.textbelt.com/"
+  ]
+}
