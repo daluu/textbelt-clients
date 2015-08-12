@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+<name>TextBelter</name>
+<namespace>org.cuuldesign.textbelter</namespace>
+<version>1.0.0.0</version>
+<author name="David Luu">
+<info url="textbelt.com" text="Textbelt" />
+</author>
+<copyright>&#169; 2015</copyright>
+<description>Send SMS without any registration.</description>
+<icons>
+<icon height="41" width="64" src="textbelter_icon_64.png" />
+</icons>
+<hosts>
+<host name="sidebar">
+<base type="HTML" apiVersion="1.0.0" src="textbelter.html" />
+<permissions>full</permissions>
+<platform minPlatformVersion="0.3" />
+</host>
+</hosts>
+</gadget>  
