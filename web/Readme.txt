@@ -1,0 +1,3 @@
+The HTA client will only work on systems running IE 7 or higher. May work with IE 6 but I forget. This is due to requirement of newer version of XML HTTP request object used by the client.
+
+The web and mobile client should work on any browser, whether hosted on a web server or run locally. The mobile client is (more) optimized for mobile/tablet browsers. If they don't run hosted on a web server, it's likely CORS cross domain acess restriction of browser sandbox to textbelt.com.

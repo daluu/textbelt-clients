@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Textbelter</title>
+<script language="javascript" src="htaclient.js"></script>
+<!--// See client.js for code comments and references //-->
+<script>window.resizeTo(800, 200);</script>
+<HTA:APPLICATION ID="TextbeltHtaDemo" 
+    APPLICATIONNAME="TextbeltHtaDemo" 
+    ICON="Textbelter_icon_16.ico"
+    SHOWINTASKBAR="yes"
+    SINGLEINSTANCE="yes"
+    SYSMENU="yes">
+<style>        
+	td
+	{
+	    font-size: 12px;
+	}
+	.header
+	{
+		font-weight: bold;
+	}
+	.error
+	{
+		color: red;
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+<div style="border: 1px solid #D5DBDB; padding: 0px; width:600px; margin:0 auto; background-color: #D5DBDB;">
+<table align="center">
+<tr>
+<td align="center" class="header">
+ Recipient locale:
+</td>
+<td align="center" class="header">
+Number:
+</td>
+<td align="center" class="header">
+Message:
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<SELECT NAME="Destination" id="Destination">	
+<OPTION VALUE="USA">USA</OPTION>
+<OPTION VALUE="Canada">Canada</OPTION>
+<OPTION VALUE="International">International</OPTION>
+</SELECT>
+</td>
+<td>
+<INPUT TYPE="Text" NAME="Number" id="Number" SIZE="15" MAXLENGTH="16">
+</td>
+<td>
+<INPUT TYPE="Text" NAME="Message" id="Message" SIZE="30" MAXLENGTH="120">
+</td>
+<td>
+<INPUT TYPE="Button" VALUE="Send" NAME="Send" ID="Send" onclick="sendsms();">
+</td>
+</tr>
+<tr>
+<td colspan="6" align="left">
+<span class="header">Status:</span> <div ID="status_message"></div>
+<!--//<INPUT TYPE="Text" DISABLED="disabled" ID="status_message" SIZE="90"></INPUT>//-->
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
